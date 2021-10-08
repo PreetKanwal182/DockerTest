@@ -18,12 +18,10 @@ RUN apt-get -qq -y install curl
 # RUN apt-get install -y mssql-server
 # RUN /opt/mssql/bin/mssql-conf setup
 
-RUN curl https://packages.microsoft.com/keys/microsoft.asc 
-RUN sudo apt-key add -
-RUN curl https://packages.microsoft.com/config/ubuntu/20.04/prod.list 
-RUN sudo tee /etc/apt/sources.list.d/msprod.list
-RUN sudo apt-get update 
-RUN sudo apt-get install mssql-tools
+RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
+RUN curl https://packages.microsoft.com/config/ubuntu/20.04/prod.list | tee /etc/apt/sources.list.d/msprod.list
+RUN apt-get update 
+RUN apt-get install mssql-tools
  
 # ENV PATH=${PATH}:/opt/mssql/bin
 # RUN mkdir -p /var/opt/mssql/data
