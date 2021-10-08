@@ -2,7 +2,8 @@ FROM ubuntu:latest
  
 
 # RUN apt-get update && apt-get install -y \ curl
-RUN apk update && apk add curl curl-dev
+# RUN apk update && apk add curl curl-dev
+RUN apk --no-cache add curl
 
 RUN curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
 RUN yum install -y mssql-server
