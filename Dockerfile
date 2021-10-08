@@ -4,7 +4,7 @@ FROM ubuntu:latest
 RUN apt-get update 
 RUN apt-get -qq -y install curl
 # RUN apt update -y
-RUN apt-get install -y yum
+RUN apt-get -qq -y install yum
 
 
 RUN curl -o /etc/yum/repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
