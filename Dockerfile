@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get -qq -y install curl
 # RUN apt update -y
 RUN apt-get -qq -y install sudo
-
+RUN apt-get install -y gnupg
 
 
 # RUN curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
