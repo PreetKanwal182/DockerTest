@@ -11,11 +11,18 @@ jobs:
      image: preet182/docker-repo:ubuntusqlv2
   
     steps:
+    - name: Cleaning
+      run: |
+       ls -ltra
+       echo " Cleaning Workspace"
+       rm -rf ./* ./.[^.] ./.??*
+       ls -ltra
+    
     - name: 'Checkout from Branch ${{ github.REF }}'
       uses: actions/checkout@v2
       with:
         ref: ${{ github.REF }}
         fetch-depth: 0
-      
+     
     
   
