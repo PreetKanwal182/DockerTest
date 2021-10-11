@@ -11,6 +11,10 @@ jobs:
      image: preet182/docker-repo:ubuntusqlv2
   
     steps:
-    - uses: actions/checkout@v2
+    - name: 'Checkout from Branch ${{ github.REF }}'
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.REF }}
+        feth-depth: 0
     
   
