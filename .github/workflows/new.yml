@@ -2,7 +2,7 @@ name: Repository Details 1
 
 on:
  push:
-  branches: [ master ]
+  branches: [ main ]
   
 jobs:
  build:
