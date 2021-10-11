@@ -1,0 +1,12 @@
+name: Repo Details
+
+on:
+ push: 
+  branches: [ main ]
+  
+jobs:
+  build:
+    runs-on: [self-hosted, Linux, enterprise, docker]
+    container: 
+     image: preet182/docker-repo:ubuntusqlv2
+  
