@@ -15,10 +15,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag preet182/docker-repo:ubuntusql:v1
+      run: docker build . --file Dockerfile --tag preet182/docker-repo:ubuntusqlv1
       
     - name: Docker image
       run: docker images
       
     - name: Docker Push
-      run: docker push preet182/docker-repo:ubuntusql:v1
+      run: docker push preet182/docker-repo:ubuntusqlv1
