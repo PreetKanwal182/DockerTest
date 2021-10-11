@@ -21,10 +21,10 @@ jobs:
       run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag preet182/docker-repo/ubuntusql:v2
+      run: docker build . --file Dockerfile --tag preet182/docker-repo:ubuntusqlv2
       
     - name: Docker Image
       run: docker images
       
     - name: Docker Push
-      run: docker push preet182/docker-repo/ubuntusql:v2
+      run: docker push preet182/docker-repo:ubuntusqlv2
