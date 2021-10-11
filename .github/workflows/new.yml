@@ -15,8 +15,8 @@ jobs:
      ref: ${{ github.REF}}
      fetch.depth: 0
      
-  - name: VSwhere path
-    run: Get-ChildItem -path "D:\a\Final_metric\Final_metric"
+#   - name: VSwhere path
+#     run: Get-ChildItem -path "D:\a\Final_metric\Final_metric"
 
   - uses: azure/sql-action@v1
     name: connect sql server
