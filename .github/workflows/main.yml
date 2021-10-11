@@ -6,15 +6,13 @@ on:
   
 jobs:
   build:
-    runs-on: [self-hosted, Linux, enterprise, docker]
+    runs-on: ubuntu-latest
     container: 
      image: preet182/docker-repo:ubuntusqlv2
   
     steps:
     - name: 'Checkout from Branch ${{ github.REF }}'
       uses: actions/checkout@v2
-      with:
-        ref: ${{ github.REF }}
-        feth-depth: 0
+      
     
   
