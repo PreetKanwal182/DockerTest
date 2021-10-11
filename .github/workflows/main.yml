@@ -6,9 +6,9 @@ on:
   
 jobs:
   build:
-    runs-on: ubuntu-latest
-    container: 
-     image: preet182/docker-repo:ubuntusqlv2
+#     runs-on: ubuntu-latest
+#     container: 
+#      image: preet182/docker-repo:ubuntusqlv2
   
     steps:
     - name: Cleaning
@@ -23,6 +23,10 @@ jobs:
       with:
         ref: ${{ github.REF }}
         fetch-depth: 0
+        
+    - name: VSwhere Path
+      run: Get-ChildItem -path "C:"
+      
      
     
   
