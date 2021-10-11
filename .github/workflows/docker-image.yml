@@ -17,7 +17,7 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag preet182/docker-repo:ubuntusqlv1
       
-    - name: Docker image
+    - name: Docker Image
       run: docker images
       
     - name: Docker Push
