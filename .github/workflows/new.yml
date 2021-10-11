@@ -21,8 +21,7 @@ jobs:
   - uses: azure/sql-action@v1
     name: connect sql server
     with:
-    server-name: (localdb)\mssqllocaldb
-    connection-string: ${{ secrets.SQL_CONNECTION_STRING }}
-    # sql-file: './Build.sl'
-    sql-file: 'D:\a\Final_metric\Final_metric/Build.sql
-
+     server-name: (localdb)\mssqllocaldb
+     connection-string: ${{ secrets.SQL_CONNECTION_STRING }}
+     # sql-file: './Build.sql'
+     sql-file: 'D:\a\Final_metric\Final_metric/Build.sql'
