@@ -10,3 +10,7 @@ jobs:
     container: 
      image: preet182/docker-repo:ubuntusqlv2
   
+    steps:
+    - uses: actions/checkout@v2
+    
+  
