@@ -4,7 +4,6 @@ FROM mcr.microsoft.com/mssql/server
 
 # RUN apt-get update 
 # RUN apt-get -qq -y install curl
-# # RUN apt update -y
 # RUN apt-get -qq -y install sudo
 # RUN apt-get install -y gnupg
 
